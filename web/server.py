@@ -92,7 +92,6 @@ def create_message():
         content=c['content'],
         user_from_id=c['user_from_id'],
         user_to_id=c['user_to_id'],
-        sent_on=datetime.datetime.now()
     )
     session = db.getSession(engine)
     session.add(message)
